@@ -15,6 +15,14 @@
 			"type": "string",
 			"defaultValue": "https://jsonplaceholder.typicode.com"
 		},
+		"ls_AzureSQL_supplychain_meta_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "optimizationserver.database.windows.net"
+		},
+		"ls_AzureSQL_supplychain_meta_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "supplychain_meta"
+		},
 		"optimizationDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://saoptimization.dfs.core.windows.net/"
@@ -51,6 +59,12 @@
 					},
 					"RestService1_properties_typeProperties_url": {
 						"value": "[parameters('RestService1_properties_typeProperties_url')]"
+					},
+					"ls_AzureSQL_supplychain_meta_properties_typeProperties_server": {
+						"value": "[parameters('ls_AzureSQL_supplychain_meta_properties_typeProperties_server')]"
+					},
+					"ls_AzureSQL_supplychain_meta_properties_typeProperties_database": {
+						"value": "[parameters('ls_AzureSQL_supplychain_meta_properties_typeProperties_database')]"
 					},
 					"optimizationDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('optimizationDataLakeStorage1_properties_typeProperties_url')]"
