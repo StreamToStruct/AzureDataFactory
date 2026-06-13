@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-optimizationhaseena"
+		},
+		"optimizationDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://jsonplaceholder.typicode.com"
+		},
+		"optimizationDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://saoptimization.dfs.core.windows.net/"
+		}
+	}
+}
