@@ -47,6 +47,36 @@
 					"variableName": "watermark_date",
 					"value": "@activity('lkp_get_watermark').output.firstRow.last_load_date"
 				}
+			},
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "watermark_date",
+						"dependencyConditions": [
+							"Completed"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/syedyasmeen1609@gmail.com/01_mount_adls_read_csv",
+					"baseParameters": {
+						"watermark_date": "@variables('watermark_date')"
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "AzureDatabricksnotebook1",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"variables": {
