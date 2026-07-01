@@ -5,8 +5,14 @@
 		"factoryName": {
 			"value": "adf-optimizationhaseena"
 		},
+		"AzureDatabricksnotebook1_accessToken": {
+			"value": ""
+		},
 		"optimizationDataLakeStorage1_accountKey": {
 			"value": ""
+		},
+		"AzureDatabricksnotebook1_properties_typeProperties_existingClusterId": {
+			"value": "0616-103606-2r5qns7v"
 		},
 		"RestService1_properties_typeProperties_url": {
 			"value": "https://jsonplaceholder.typicode.com"
